@@ -11,13 +11,29 @@
 
     <div class="container">
         <div class="content">
-            <h1>The Next <br> Dimension</h1>
-            <p>Journey into the next dimension with this crazy particle effect.</p>
+            <h1><svg viewBox="0 0 600 300">
+                <!-- Symbol-->
+                <symbol id="s-text">
+                  <text text-anchor="middle" x="50%" y="50%" dy=".35em">SHOPIFY </text>
+                </symbol>
+                <!-- Duplicate symbols-->
+                <use class="text" xlink:href="#s-text"></use>
+                <use class="text" xlink:href="#s-text"></use>
+                <use class="text" xlink:href="#s-text"></use>
+                <use class="text" xlink:href="#s-text"></use>
+                <use class="text" xlink:href="#s-text"></use>
+              </svg></h1>
+            <p>.___ CONTACT ___. <br>  <br> <span class="name">Vishwajeetsinh Rathod    </span>  <br>
+            <span><a href="mailto:rathodvishwajeet64@gmail.com" class="contact">📧Email</a></span> 
+            
+                <a class="contact" href="tel:+917990751345"> 📞call</a>
+        </p>
         </div>
     </div>
     <canvas class="webgl">
       
     </canvas>
+    
   
 
     <script src="JavaScript/three.min.js"></script>
@@ -42,8 +58,8 @@
         const tl = gsap.timeline()
 
         tl.from(content, {delay: .5, duration: 4, cssRule:{scaleX:0}})
-        tl.to(h1, {duration:2, clipPath:' polygon(0 0, 100% 0,100% 100%, 0 100%)', y:'30px'}, "-=3")
-        tl.to(p, {duration:2, clipPath:' polygon(0 0, 100% 0,100% 100%, 0 100%)', y:'30px'}, "-=2")
+        tl.to(h1, {duration:2, clipPath:' polygon(0 0, 100% 0,100% 100%, 0 100%)', y:'0px'}, "-=3")
+        tl.to(p, {duration:2, clipPath:' polygon(0 0, 100% 0,100% 100%, 0 100%)', y:'30px '}, "-=2")
     </script>
 </body>
 </html>
